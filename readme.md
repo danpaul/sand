@@ -21,7 +21,6 @@ $LOAD_PATH << './lib'
 
 require 'sand'
 include Sand
-```
 
 default_sample_rate = 44100
 
@@ -43,3 +42,5 @@ w2 = Simple_write.new(file: "./samples/x.wav")
 #r.data.each{|n| w2 << n}
 
 w2.close
+
+```
