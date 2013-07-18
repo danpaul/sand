@@ -1,0 +1,18 @@
+Road map:
+
+develop reader
+	buffer_format may not be used
+	make into sample object
+	include volume
+	playback speed
+
+develop channels
+
+create packaging framework/serialization
+
+storage/website
+	modules/objects
+
+auto close read/write objects -- see wave reader code: if block_given? -- also see write
+
+basic frequency conversion (second, minute, hour, etc) -- arbitrary time frame conversion?
