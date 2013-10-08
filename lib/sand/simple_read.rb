@@ -11,7 +11,7 @@ module Sand
                  :loop => true}.
                   merge(options_in).
                   each{|key, value| self.instance_variable_set("@#{key}".to_sym, value)}
-      
+
       unless @reader_format then @reader_format = Format.new(:mono, :float, @sample_rate) end
       unless @buffer_format then @buffer_format = Format.new(:mono, :float, @sample_rate) end
       

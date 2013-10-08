@@ -8,7 +8,7 @@ module Sand
       options = {chain: [], volume: 1.0, normalize: true, normalize_max: 0.0}.merge(options_in)
       if options[:normalize] then options[:normalize_max] = sum_max_chain(options[:chain]) end
       super(options)
-    end    
+    end
     def next(tone_in = 0.0)
       tone_sum = 0.0
       @chain.each{|n| tone_sum += n.next(tone_sum)}

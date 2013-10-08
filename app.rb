@@ -14,6 +14,8 @@ end
 
 w.close
 
+
+
 # w2 = Simple_write.new(file: "./samples/reader_test.wav")
 
 # r = Simple_read.new(file: './samples/a_440.wav')
