@@ -5,24 +5,18 @@ include Sand
 
 default_sample_rate = 44100
 
-w = Simple_write.new(file: "./samples/a_440.wav")
-f = Sine_wave.new(frequency: 440.0)
+multi = Multi_write.new(file: "./samples/multi_test.wav", channels: 2)
 
-(0..default_sample_rate*3).each do
-	w << f.next
+a440 = Sine_wave.new(frequency: 440.0)
+
+a880 = Sine_wave.new(frequency: 880.0)
+
+frame_buffer = [0.0, 0.0]
+
+(0..default_sample_rate*5).each do
+	frame_buffer[0] = a440.next
+	frame_buffer[1] = a880.next
+	multi << frame_buffer
 end
 
-w.close
-
-
-
-# w2 = Simple_write.new(file: "./samples/reader_test.wav")
-
-# r = Simple_read.new(file: './samples/a_440.wav')
-
-
-# (0..default_sample_rate*3).each do
-# 	w2 << r.next
-# end
-
-# w2.close
+multi.close
