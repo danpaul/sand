@@ -48,8 +48,8 @@ four_second_wave = Sine_wave.new(frequency: 0.25)
 #   as `to_mod` with a frequency of `wave`. The frequency of `to_mod` will
 #   modulate between `low` and `high`. 
 f_mod = Frequency_mod.new(wave: two_second_wave,
-  					    to_mod: sine_wave,
-					       low: 440.0,
+          					    to_mod: sine_wave,
+				          	       low: 440.0,
                           high: 880.0)
 
 # The `Volume_mod` object does the same things as `Frequency_mod` except it 
