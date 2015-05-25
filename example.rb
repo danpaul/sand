@@ -1,8 +1,8 @@
 #require or include Sand (Sand is not yet)
 
-$LOAD_PATH << './lib'
+# $LOAD_PATH << './lib'
 
-require 'sand'
+require_relative 'lib/sand'
 include Sand
 
 # This is the default sample rate used by all Sand objects (samples per second)

@@ -1,17 +1,23 @@
-$LOAD_PATH << '../lib'
+# $LOAD_PATH << '../lib'
 
-require 'sand'
+# puts Dir.pwd
+# return
+
+require_relative '../lib/sand'
 include Sand
 
 DEFAULT_SAMPLE_RATE = 44100
 
 NUMBER_OF_MODS = 20;
 
+SAMPLE_FILE_PATH = Dir.pwd + '/sketches/samples/test.wav';
+
 def get_rand(min, max)
 	return rand * (max - min) + min
 end
 
-file = Simple_write.new(file: "./samples/001_02.wav")
+# file = Simple_write.new(file: "./samples/001_02.wav")
+file = Simple_write.new(file: SAMPLE_FILE_PATH)
 
 a440 = Sine_wave.new(frequency: 440.0)
 
