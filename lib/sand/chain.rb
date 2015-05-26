@@ -1,3 +1,5 @@
+### broken, returning value greater than 0 after fade out
+
 module Sand
 
 ####################################################################################################

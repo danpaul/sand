@@ -8,7 +8,9 @@ module Sand
     def next
       r = Math.sin(@angle)
       @angle = @angle + @frequency.to_f / @sample_rate * 2 * Math::PI
-      if @angle >= 2*Math::PI then @angle = @angle - 2 * Math::PI end
+      if @angle >= 2*Math::PI
+        @angle = @angle - 2 * Math::PI
+      end
       return r
     end
   end

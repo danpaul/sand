@@ -1,5 +1,6 @@
 require_relative 'sand/sand.rb'
 require_relative 'sand/chain.rb'
+require_relative 'sand/fade.rb'
 require_relative 'sand/hour_glass'
 require_relative 'sand/mod'
 require_relative 'sand/sample'

@@ -54,7 +54,7 @@ f_mod = Frequency_mod.new(wave: two_second_wave,
 
 # The `Volume_mod` object does the same things as `Frequency_mod` except it 
 #   modulates... you guessed it... volume instead of frequency. A volume of 0
-#   is silent whild a volume of 1.0 is full volume.
+#   is silent while a volume of 1.0 is full volume.
 v_mod = Volume_mod.new(wave: four_second_wave,
                      to_mod: sine_wave,
                         low: 0.0,
