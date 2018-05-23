@@ -1,9 +1,12 @@
-$LOAD_PATH << '../lib'
+# $LOAD_PATH << '../lib'
 
-require 'sand'
+# require 'sand'
+# include Sand
+
+require_relative '../lib/sand'
 include Sand
 
-SAMPLE_FILE_NAME = '003_01'
+SAMPLE_FILE_NAME = '003'
 
 DEFAULT_SAMPLE_RATE = 44100
 
